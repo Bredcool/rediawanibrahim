@@ -1,0 +1,297 @@
+.window-header {
+
+    height: 54px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding-inline: 22px;
+
+    background: rgba(255, 255, 255, .03);
+
+    border-bottom: 1px solid rgba(255, 255, 255, .06);
+}
+
+.window-header span {
+
+    width: 12px;
+
+    height: 12px;
+
+    border-radius: 50%;
+}
+
+.red {
+
+    background: #ff5f57;
+}
+
+.yellow {
+
+    background: #febc2e;
+}
+
+.green {
+
+    background: #28c840;
+}
+
+/* ========================= */
+
+.orbit-wrapper {
+
+    position: relative;
+
+    width:min(520px,90vw);
+    aspect-ratio:1;
+
+}
+
+/* FOTO */
+
+.profile-wrapper {
+
+    position: absolute;
+
+    inset: 50% auto auto 50%;
+
+    transform: translate(-50%, -50%);
+
+    width:42%;
+    aspect-ratio:1;
+
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    border: 4px solid rgba(0, 255, 157, .4);
+
+    box-shadow:
+        0 0 40px rgba(0, 255, 157, .25),
+        0 0 100px rgba(0, 255, 157, .15);
+
+    z-index: 5;
+
+}
+
+.profile-wrapper::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: -40px;
+
+    border-radius: 50%;
+
+    background: radial-gradient(rgba(0, 255, 157, .25),
+            transparent 70%);
+
+    z-index: -1;
+
+}
+
+.profile-image {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+/* ORBIT */
+
+.orbit {
+
+    position: absolute;
+
+    inset: 0;
+
+    border-radius: 50%;
+
+}
+
+.orbit-1 {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, .05);
+
+    animation: rotateClockwise 30s linear infinite;
+}
+
+.orbit-2 {
+    position: absolute;
+
+    width:70%;
+    height:70%;
+    left:15%;
+    top:15%;
+
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, .04);
+
+    animation: rotateReverse 22s linear infinite;
+}
+
+.orbit-item{
+    position:absolute;
+}
+
+/* CHIP */
+
+.tech {
+    width:11%;
+    aspect-ratio:1;
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border-radius: 50%;
+
+    background: rgba(15, 15, 15, .9);
+
+    border: 1px solid rgba(0, 255, 157, .25);
+
+    color: #00ff9d;
+
+    font-size: 26px;
+
+    backdrop-filter: blur(20px);
+
+    transition: .35s;
+
+    animation: keepUpright 30s linear infinite;
+}
+
+.tech:hover {
+
+    transform: scale(1.15);
+
+    border-color: #00ff9d;
+
+    box-shadow:
+        0 0 25px rgba(0, 255, 157, .5),
+        0 0 60px rgba(0, 255, 157, .2);
+
+}
+
+/* posisi orbit luar */
+
+.postgres {
+
+    top: -30px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+}
+
+.docker {
+
+    right: -30px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+}
+
+.git {
+
+    bottom: -30px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+}
+
+.github {
+
+    left: -30px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+}
+
+/* orbit dalam */
+
+.react {
+
+    top: -30px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+}
+
+.vuedotjs {
+
+    right: -30px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+}
+
+.go {
+
+    bottom: -30px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+}
+
+.nodedotjs {
+
+    left: -30px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+}
+
+/* animation */
+
+@keyframes rotateClockwise {
+
+    from {
+
+        transform: rotate(0deg);
+
+    }
+
+    to {
+
+        transform: rotate(360deg);
+
+    }
+
+}
+
+@keyframes rotateReverse {
+
+    from {
+
+        transform: rotate(360deg);
+
+    }
+
+    to {
+
+        transform: rotate(0deg);
+
+    }
+
+}

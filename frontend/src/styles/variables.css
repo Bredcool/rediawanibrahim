@@ -1,0 +1,29 @@
+:root {
+    /* Background */
+    --bg-primary: #050816;
+    --bg-secondary: #0b1120;
+
+    /* Surface */
+    --surface: rgba(17, 25, 40, 0.65);
+
+    /* Text */
+    --text-primary: #ffffff;
+    --text-secondary: #a5b4c3;
+
+    /* Brand */
+    --primary: #00ff9d;
+    --primary-light: #2affc6;
+    --secondary: #19e68c;
+
+    /* Border */
+    --border: rgba(0, 255, 157, 0.15);
+
+    /* Shadow */
+    --shadow-glow: 0 0 30px rgba(0, 255, 157, 0.25);
+
+    /* Radius */
+    --radius: 24px;
+
+    /* Transition */
+    --transition: 300ms ease;
+}

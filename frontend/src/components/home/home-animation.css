@@ -1,0 +1,15 @@
+@keyframes auroraMove {
+
+    from {
+
+        transform: translateY(-40px) scale(1);
+
+    }
+
+    to {
+
+        transform: translateY(40px) scale(1.08);
+
+    }
+
+}

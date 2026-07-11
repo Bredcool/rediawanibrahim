@@ -1,0 +1,190 @@
+/* ===========================
+   TABLET
+=========================== */
+
+@media (max-width: 992px) {
+
+    .home {
+        padding-top: 110px;
+        min-height: auto;
+        padding-bottom: 80px;
+    }
+
+    .home-wrapper {
+        grid-template-columns: 1fr;
+        gap: 60px;
+        text-align: center;
+    }
+
+    .home-left {
+        align-items: center;
+    }
+
+    .home-desc {
+        max-width: 100%;
+    }
+
+    .home-buttons,
+    .home-stats {
+        justify-content: center;
+    }
+
+    .home-tech {
+        max-width: 550px;
+        margin-inline: auto;
+    }
+
+    .home-title {
+        font-size: 58px;
+    }
+
+    .home-right {
+        order: -1;
+    }
+
+    .orbit-wrapper {
+        width: 420px;
+        height: 420px;
+    }
+
+    .orbit-2 {
+        width: 290px;
+        height: 290px;
+        left: 65px;
+        top: 65px;
+    }
+
+    .profile-wrapper {
+        width: 180px;
+        height: 180px;
+    }
+
+    .tech {
+        width: 52px;
+        height: 52px;
+        font-size: 22px;
+    }
+
+}
+
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media (max-width: 576px) {
+
+    .home {
+        padding-top: 100px;
+        padding-bottom: 60px;
+    }
+
+    .home>.container {
+        padding-inline: 20px;
+    }
+
+    .home-wrapper {
+        gap: 40px;
+    }
+
+    .home-title {
+        font-size: 38px;
+        line-height: 1.2;
+    }
+
+    .home-role {
+        font-size: 20px;
+        min-height: 30px;
+    }
+
+    .home-desc {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    .home-buttons {
+        width: 100%;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .home-stats {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .home-stats div {
+        flex: 1;
+    }
+
+    .home-stats h3 {
+        font-size: 24px;
+    }
+
+    .home-stats > span {
+        font-size: 12px;
+    }
+
+    .home-tech {
+
+        width: 100%;
+
+        max-width: calc(100vw - 40px);
+
+        margin-inline: auto;
+    }
+
+    /* Orbit */
+
+    .orbit-wrapper {
+        width: 300px;
+        height: 300px;
+    }
+
+    .orbit-2 {
+        width: 200px;
+        height: 200px;
+        left: 50px;
+        top: 50px;
+    }
+
+    .profile-wrapper {
+        width: 140px;
+        height: 140px;
+    }
+
+    .tech {
+        width: 42px;
+        height: 42px;
+        font-size: 18px;
+    }
+
+    .postgres,
+    .react {
+        top: -20px;
+    }
+
+    .docker,
+    .vuedotjs {
+        right: -20px;
+    }
+
+    .git,
+    .go {
+        bottom: -20px;
+    }
+
+    .github,
+    .nodedotjs {
+        left: -20px;
+    }
+
+}

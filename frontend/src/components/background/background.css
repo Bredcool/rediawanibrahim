@@ -1,0 +1,83 @@
+/* ===========================
+   GRID
+=========================== */
+
+.grid-bg {
+
+    position: absolute;
+
+    inset: 0;
+
+    background-image:
+        linear-gradient(rgba(0, 255, 157, .08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 255, 157, .08) 1px, transparent 1px);
+
+    background-size: 50px 50px;
+
+    mask-image:
+        radial-gradient(circle at center,
+            black 45%,
+            transparent 100%);
+
+    opacity: .6;
+
+}
+
+/* ===========================
+   GLOW
+=========================== */
+
+.glow {
+
+    position: absolute;
+
+    width: 500px;
+
+    height: 500px;
+
+    border-radius: 50%;
+
+    filter: blur(120px);
+
+    opacity: .15;
+
+}
+
+.glow-left {
+
+    top: 0;
+
+    left: -200px;
+
+    background: #00ff9d;
+
+}
+
+.glow-right {
+
+    bottom: -150px;
+
+    right: -200px;
+
+    background: #2affc6;
+
+}
+
+/* ===========================
+   NOISE
+=========================== */
+
+.noise {
+
+    position: absolute;
+
+    inset: 0;
+
+    opacity: .025;
+
+    background-image:
+        radial-gradient(#fff 1px, transparent 1px);
+
+    background-size: 5px 5px;
+
+}

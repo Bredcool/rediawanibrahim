@@ -1,0 +1,262 @@
+.container {
+    position: relative;
+    z-index: 5;
+}
+
+.projects {
+    position: relative;
+    overflow: hidden;
+    padding: 50px 0;
+}
+
+.projects-bg {
+    position: absolute;
+
+    inset: 0;
+
+    overflow: hidden;
+
+    z-index: 0;
+
+    pointer-events: none;
+
+    -webkit-mask-image:
+        linear-gradient(to bottom,
+            transparent,
+            black 10%,
+            black 90%,
+            transparent);
+
+    mask-image:
+        linear-gradient(to bottom,
+            transparent,
+            black 10%,
+            black 90%,
+            transparent);
+}
+
+/* =====================================================
+   FLOATING GLOW
+===================================================== */
+
+.project-glow {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(120px);
+    pointer-events: none;
+    animation: glowFloat 10s ease-in-out infinite alternate;
+    z-index: -1;
+}
+
+.glow-left {
+    width: 320px;
+    height: 320px;
+
+    top: -60px;
+    left: -120px;
+
+    background: rgba(0, 255, 157, .18);
+}
+
+.glow-right {
+    width: 260px;
+    height: 260px;
+
+    bottom: -40px;
+    right: -80px;
+
+    background: rgba(0, 255, 157, .12);
+}
+
+@keyframes glowFloat {
+
+    from {
+        transform:
+            translateY(-20px) scale(1);
+    }
+
+    to {
+        transform:
+            translateY(25px) scale(1.12);
+    }
+
+}
+
+/* Header */
+
+.projects-header {
+    max-width: 760px;
+    margin: auto;
+    text-align: center;
+}
+
+.section-badge {
+
+    display: inline-flex;
+
+    padding: 8px 18px;
+
+    border-radius: 999px;
+
+    border: 1px solid var(--border);
+
+    background: rgba(0, 255, 157, .08);
+
+    color: var(--primary);
+
+    font-size: .85rem;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 22px;
+}
+
+.section-title {
+
+    font-size: clamp(2.5rem, 5vw, 4rem);
+
+    font-weight: 700;
+
+    margin-bottom: 20px;
+
+    line-height: 1.1;
+}
+
+.section-desc {
+
+    max-width: 650px;
+
+    margin: auto;
+
+    color: var(--text-secondary);
+
+    font-size: 1.05rem;
+
+    line-height: 1.8;
+}
+
+/* Stats */
+
+.project-stats {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 24px;
+
+    margin-top: 60px;
+
+    flex-wrap: wrap;
+}
+
+.stat-card {
+
+    min-width: 180px;
+
+    padding: 28px;
+
+    border-radius: 20px;
+
+    backdrop-filter: blur(16px);
+
+    background: rgba(255, 255, 255, .03);
+
+    border: 1px solid var(--border);
+
+    text-align: center;
+
+    transition: .35s;
+}
+
+.stat-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: var(--shadow-glow);
+
+    border-color: var(--primary);
+}
+
+.stat-card h3 {
+
+    color: var(--primary);
+
+    font-size: 2rem;
+
+    margin-bottom: 8px;
+}
+
+.stat-card span {
+
+    color: var(--text-secondary);
+}
+
+/* Grid */
+
+.grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+
+    gap: 30px;
+    transition: .35s;
+}
+
+.react-parallax-tilt {
+
+    height: 100%;
+}
+
+/* Featured */
+
+.featured-title {
+
+    font-size: 1.4rem;
+
+    font-weight: 700;
+
+    margin-top: 80px;
+
+    margin-bottom: 30px;
+
+    color: var(--text-primary);
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+@keyframes floatGlow {
+    from {
+        transform: translateY(-30px);
+    }
+
+    to {
+        transform: translateY(30px);
+    }
+}
+
+/* Mobile */
+
+@media (max-width:768px) {
+
+    .projects {
+
+        padding: 100px 0;
+    }
+
+    .project-stats {
+
+        gap: 16px;
+    }
+
+    .stat-card {
+
+        min-width: 150px;
+    }
+
+}

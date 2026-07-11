@@ -1,0 +1,28 @@
+.aurora {
+    position: absolute;
+    inset: -300px;
+    background:        radial-gradient(circle at 20% 20%, rgba(0, 255, 157, .15), transparent 35%),        radial-gradient(circle at 90% 30%, rgba(0, 180, 255, .10), transparent 40%),        radial-gradient(circle at 60% 80%, rgba(42, 255, 198, .10), transparent 40%);
+    filter: blur(90px);
+    animation: auroraMove 14s ease-in-out infinite alternate;
+    z-index: 1;
+    -webkit-animation: auroraMove 14s ease-in-out infinite alternate;
+}
+
+.grid-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background-image:
+
+        linear-gradient(rgba(255, 255, 255, .03) 1px, transparent 1px),
+
+        linear-gradient(90deg, rgba(255, 255, 255, .03) 1px, transparent 1px);
+
+    background-size: 55px 55px;
+
+    mask-image: linear-gradient(to bottom, black, transparent);
+
+    opacity: .35;
+}
