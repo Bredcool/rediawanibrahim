@@ -2,7 +2,7 @@
 
 Official portfolio website of **Rediawan Ibrahim (Bred)**, a Fullstack Developer specializing in modern web applications built with React, TypeScript, Go, and PostgreSQL.
 
-![Portfolio Preview](public/data/profile.jpg)
+![Portfolio Preview](public/data/rediawan-ibrahim-bred-fullstack-developer.jpg)
 
 ---
 
