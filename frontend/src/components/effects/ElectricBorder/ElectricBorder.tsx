@@ -8,7 +8,7 @@ import type {
     CSSProperties,
     ReactNode,
 } from "react";
-import './ElectricBorder.css';
+import './electricBorder.css';
 
 interface ElectricBorderProps {
     children: ReactNode;
