@@ -23,17 +23,13 @@ type Props = {
 
 export default function ProjectCard({
     title,
-    subtitle,
     description,
     image,
-    year,
     status,
     category,
     tags,
-    features,
     github,
     demo,
-    featured,
 }: Props) {
     return (
         <motion.article

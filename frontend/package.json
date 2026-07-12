@@ -2,6 +2,7 @@
 	"name": "rediawanibrahim",
 	"version": "1.0.0",
 	"private": true,
+	"type": "module",
 	"author": "Rediawan Ibrahim",
 	"license": "MIT",
 	"homepage": "https://rediawanibrahim.pages.dev",
