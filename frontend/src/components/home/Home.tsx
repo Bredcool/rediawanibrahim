@@ -21,7 +21,7 @@ import {
 } from "react-icons/si";
 
 const techs = [
-    "React • Vue.js • Go • Node.js • PostgreSQL • Docker • Git • GitHub •",
+    "React | Vue.js | Go | Node.js | PostgreSQL | Docker | Git | GitHub |",
 ];
 
 export default function Home() {
