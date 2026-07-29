@@ -147,12 +147,12 @@ export default function Projects() {
                             ⭐ Featured Project
                         </div>
 
-                        <ElectricBorder>
+                        {/* <ElectricBorder> */}
 
                             <FeaturedProject
                                 {...featuredProject}
                             />
-                        </ElectricBorder>
+                        {/* </ElectricBorder> */}
                     </>
                 )}
 

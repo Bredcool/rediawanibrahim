@@ -72,7 +72,7 @@ export default function About() {
 
                     {/* LEFT */}
 
-                    <ElectricBorder>
+                    {/* <ElectricBorder> */}
                         <motion.div
                             className="profile-card"
                             initial={{ opacity: 0, x: -40 }}
@@ -132,7 +132,7 @@ export default function About() {
                             </a>
 
                         </motion.div>
-                    </ElectricBorder>
+                    {/* </ElectricBorder> */}
 
                     {/* RIGHT */}
 
