@@ -5,7 +5,7 @@ import { experience } from "../../data/experience";
 
 import "./about.css";
 import "../background/background.css";
-import ElectricBorder from "../effects/ElectricBorder/ElectricBorder";
+// import ElectricBorder from "../effects/ElectricBorder/ElectricBorder";
 import CountUp from "../../components/common/countUp/CountUp";
 
 const stats = [
