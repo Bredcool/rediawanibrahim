@@ -11,10 +11,10 @@ import {
     motion,
     useAnimationFrame,
     useMotionValue,
-    useScroll,
-    useSpring,
+    // useScroll,
+    // useSpring,
     useTransform,
-    useVelocity,
+    // useVelocity,
 } from "motion/react";
 
 import "./scrollVelocity.css";
@@ -92,12 +92,12 @@ function useElementWidth(
 function VelocityText({
     children,
     baseVelocity,
-    scrollContainerRef,
+    // scrollContainerRef,
     className = "",
-    damping,
-    stiffness,
+    // damping,
+    // stiffness,
     numCopies,
-    velocityMapping,
+    // velocityMapping,
     parallaxClassName,
     scrollerClassName,
     parallaxStyle,
@@ -105,25 +105,25 @@ function VelocityText({
 }: VelocityTextProps) {
     const baseX = useMotionValue(0);
 
-    const scrollOptions = scrollContainerRef
-        ? { container: scrollContainerRef }
-        : {};
+    // const scrollOptions = scrollContainerRef
+    //     ? { container: scrollContainerRef }
+    //     : {};
 
-    const { scrollY } = useScroll(scrollOptions);
+    // const { scrollY } = useScroll(scrollOptions);
 
-    const scrollVelocity = useVelocity(scrollY);
+    // const scrollVelocity = useVelocity(scrollY);
 
-    const smoothVelocity = useSpring(scrollVelocity, {
-        damping,
-        stiffness,
-    });
+    // const smoothVelocity = useSpring(scrollVelocity, {
+    //     damping,
+    //     stiffness,
+    // });
 
-    const velocityFactor = useTransform(
-        smoothVelocity,
-        velocityMapping.input,
-        velocityMapping.output,
-        { clamp: false }
-    );
+    // const velocityFactor = useTransform(
+    //     smoothVelocity,
+    //     velocityMapping.input,
+    //     velocityMapping.output,
+    //     { clamp: false }
+    // );
 
     const copyRef = useRef<HTMLSpanElement>(null);
 
