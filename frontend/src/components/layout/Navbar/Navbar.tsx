@@ -87,7 +87,7 @@ export default function Navbar() {
     // improved CV download (clean + fallback safe)
     const downloadCV = () => {
         const link = document.createElement("a");
-        link.href = "/data/CV Rediawan Ibrahim (English).pdf";
+        link.href = "/data/CV Rediawan Ibrahim (EN).pdf";
         link.setAttribute("download", "CV Rediawan Ibrahim.pdf");
 
         document.body.appendChild(link);
