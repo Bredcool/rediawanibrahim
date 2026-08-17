@@ -10,20 +10,21 @@ export const skills: SkillCategory[] = [
         icon: "frontend",
         items: [
             "React",
+            "TypeScript",
             "Vue.js",
             "Angular",
-            "Bootstrap",
             "HTML",
             "CSS",
+            "Bootstrap",
         ],
     },
     {
         title: "Backend",
         icon: "backend",
         items: [
-            "Go",
-            "Node.js",
-            "C#",
+            "Go (Fiber)",
+            "JavaScript (Node.js, Express.js)",
+            "C# (.NET)",
         ],
     },
     {
